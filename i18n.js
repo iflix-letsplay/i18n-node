@@ -266,6 +266,7 @@ module.exports = (function() {
       mf = MessageformatInstanceForLocale[targetLocale];
     } else {
       mf = new Messageformat(targetLocale);
+      mf.disablePluralKeyChecks();
       mf.compiledFunctions = {};
       MessageformatInstanceForLocale[targetLocale] = mf;
     }
@@ -486,7 +487,7 @@ module.exports = (function() {
       locale === undefined &&
       typeof this.locale === 'string'
     ) {
-      if (register && register.GLOBAL) {
+      if (register && register.global) {
         targetLocale = '';
       } else {
         targetLocale = this.locale;

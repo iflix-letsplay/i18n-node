@@ -1,11 +1,11 @@
 {
-  "name": "i18n",
-  "description": "lightweight translation module with dynamic json storage",
-  "version": "0.8.3",
-  "homepage": "http://github.com/mashpie/i18n-node",
+  "name": "@iflix/i18n",
+  "description": "Lightweight translation module with dynamic json storage",
+  "version": "0.8.4",
+  "homepage": "https://github.com/iflix-letsplay/i18n-node",
   "repository": {
     "type": "git",
-    "url": "http://github.com/mashpie/i18n-node.git"
+    "url": "http://github.com/iflix-letsplay/i18n-node.git"
   },
   "author": "Marcus Spiegel <marcus.spiegel@gmail.com>",
   "main": "./index",
@@ -19,11 +19,11 @@
   },
   "dependencies": {
     "debug": "*",
-    "make-plural": "^3.0.3",
-    "math-interval-parser": "^1.1.0",
-    "messageformat": "^0.3.1",
+    "make-plural": "^4.2.0",
+    "math-interval-parser": "^2.0.0",
+    "messageformat": "^2.0.4",
     "mustache": "*",
-    "sprintf-js": ">=1.0.3"
+    "sprintf-js": "^1.1.1"
   },
   "devDependencies": {
     "async": "*",
